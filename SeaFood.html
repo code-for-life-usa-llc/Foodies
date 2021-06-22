@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.flex-container {
+  display: flex;
+  background-color: #03258C;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+body {
+  background-image: url("https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y3V0dGluZyUyMGJvYXJkfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #03258C;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="homepage.html">Home</a>
+  <a href="About.html">About us</a>
+  <div class="dropdown">
+    <button class="dropbtn">Recipes 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="sweets.html">Sweets</a>
+      <a href="Meat.html">(featured)Meats</a>
+      <a href="SeaFood.html">Sea food</a>
+      <a href="Vegan.html">Vegan</a>
+    </div>
+  </div> 
+  <a href="Credits.html">Credits</a>
+</div>
+<div align="center">
+  <h1>Welcome to the Sea Food section of Foodies!</h1>
+  <p>This section has some great Sea food recipes for those who wish to take a dive.</p>
+  <h4>WARNING! Some foods listed may contain Tree nuts, peanuts, soy, wheat, and gluten, you have been warned.</h4>
+</div>
+<div class="flex-container">
+    <div>
+        <h5>First recipe: Smoked Trout</h5>
+        <div align="center">
+        <img src="https://www.smokedmeatsunday.com/wp-content/uploads/2018/06/untitled-1-of-1-3-720x405.jpg" alt="Desert" width="600">
+        </div>
+        <h6>Ingredients you'll need:</h6>
+        <ul>
+          <li>2 rainbow trout fillets, boned</li>
+          <li>1/3 cup brown sugar</li>
+          <li>1 tsp salt</li>
+          <li>1 tsp garlic powder</li>
+          <li>1 tsp onion powder</li>
+          <li>1/2 tsp ground black pepper</li>
+          <li>1/2 tsp ground cayenne pepper</li>
+        </ul>
+        <h6>Steps to bake are as following:</h6>
+        <ol>
+          <li>Place the rainbow trout, side by side on smoker racks, making sure they are not touching each other.</li>
+          <li>Make the rub by mixing together the brown sugar with all the spices. Rub the brown sugar mixture on both trout fillets</li>
+          <li>Start up the smoker, using wood briquettes of choice (alder or pacific blend works very well!). Bring the smoker up to a temperature of 250 F.</li>
+          <li>Place the trout fillet in the smoker and cook until the internal temperature reaches 140 F, about 2-3 hours.</li>
+        </ol>      
+    </div>
+</div>
+<div class="flex-container">
+    <div>
+      <h5>Second recipe: Asian Sesame Grilled Tuna Steak</h5>
+      <div align="center">
+      <img src="data:image/jpeg;base64,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" alt="Desert" width="600">
+      </div>
+      <h6>Ingredients you'll need:</h6>
+      <ul>
+        <li>2 albacore tuna steaks</li>
+        <li>1 clove garlic, grated</li>
+        <li>1 Tablespoon lemon juice</li>
+        <li>1/4 cup soy sauce</li>
+        <li>1 tablespoon sesame seeds</li>
+        <li>1-2 Tablespoons sesame oil</li>
+        <li>1 scallion, chopped</li>
+      </ul>
+      <h6>Steps to bake:</h6>
+      <ol>
+        <li>Mix together all ingredients except the tuna steaks in a medium bowl (this is the marinade)</li>
+        <li>Rinse the tuna steak with water, pat dry and season with salt and pepper on both sides</li>
+        <li>Add tuna to the marinade, making sure to coat all sides</li>
+        <li>Marinate for about 30 minutes in the refrigerator, turning once (TIP: don’t marinate too long or the acid in the lemon juice will start to “cook” the fish)</li>
+        <li>Heat your grill to medium-high heat and oil it</li>
+        <li>Grill tuna steak for 3 minutes on each side and serve.</li>
+      </ol>
+    </div>
+</div>
+</body>
+</html>
